@@ -5,14 +5,7 @@ body{
 .dim{
 opacity: 0.5;
 }
-.vendorsContainer{
-  margin: 100px;
-}
-.learnmore{
-  background-color: orange;
-  font-weight: bold;
-  cursor: pointer;
-}
+
 .learnmore:hover{
   opacity: 0.9;
   cursor: pointer;
@@ -20,6 +13,11 @@ opacity: 0.5;
 .fab:hover{
   opacity: 0.7;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .vendorsContainer{
+    margin: 100px;
+  }
 }
 @media screen and (min-width: 768px) {
   footer .brdr{
