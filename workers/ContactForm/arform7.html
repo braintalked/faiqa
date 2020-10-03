@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177631420-1"></script>
+ <script>
+	 window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+	 gtag('config', 'UA-177631420-1');
+ </script>
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/armain.css">
+<!--===============================================================================================-->
+<script src="https://kit.fontawesome.com/ab5937a0f1.js" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<span class="thanks-message">
+			<i class="far fa-check-circle fa-3x"></i>
+			<br>
+			<br>
+				شكراً
+			</span>
+			<form class="contact1-form validate-form" method="post" autocomplete="off" name="google-sheet">
+				<p style="text-align:center;"><img src="7.jpg" alt="contractor#1" style="border-radius: 50%;"></p>
+				<span class="contact1-form-title">
+					راسلني
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "الاسم مطلوب">
+					<input class="input1" type="text" name="name" placeholder="الاسم">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "يجب ادخال بريد الكتروني صحيح">
+					<input class="input1" type="text" name="email" placeholder="البريد الإلكتروني">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "الموضوع مطلوب">
+					<input class="input1" type="text" name="subject" placeholder="الموضوع">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "الرسالة مطلوبة">
+					<textarea class="input1" name="message" placeholder="الرسالة"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+				<input type="hidden" name="employeeID" value="7">
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+							إرسال
+						</span>
+					</button>
+				</div>
+			</form>
+      <div class="contact1-pic js-tilt" data-tilt>
+				<img src="images/img-01.png" alt="IMG">
+			</div>
+		</div>
+	</div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script> -->
+
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbwYUrv2U4jFYZAG-t8_M8RoEehdMt7YdpOlXrOXd4rAvGvVZuNf/exec'
+		const form = document.forms['google-sheet']
+
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.catch(error => console.error('Error!', error.message))
+		})
+	</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

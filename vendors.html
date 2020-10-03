@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Faiqa</title>
+
+    <!-- Bootstrap css & javascript links -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <!-- CSS Style File -->
+     <link rel="stylesheet" href="styles.css">
+     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ab5937a0f1.js" crossorigin="anonymous"></script>
+    <style media="screen">
+      .hide{
+        position: absolute;
+        visibility: hidden;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 10px; background-color: #06242a;">
+        <a class="navbar-brand" href="#" style="font-weight: bold; font-size: 1.7rem; margin-right: 30px;"><img src="helmet.png" style="margin-right: 5px;" alt="logo">Faiqa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="text-white nav-link border border-warning" href="#" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link border border-warning" href="#" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                Vendors
+              </a>
+            </li>
+            <li class="nav-item">
+              <a role="button" href="workers/en.html" class="text-white nav-link border border-warning" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                Workers
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="text-white nav-link border border-warning" href="#" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+                Resources
+              </a>
+            </li>
+          </ul>
+          <li class="nav-item" style="margin-left: auto;">
+            <a class="text-dark logout" style="padding: 10px 15px; font-weight: bold; background-color: orange; cursor: pointer;">Log out</a>
+          </li>
+        </div>
+    </nav>
+
+    <div class="vendorsContainer">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-3">
+              <div class="card border-dark mb-3" style="max-width: 100%;">
+                <div class="card-header" align="center">Category</div>
+                <div class="card-body text-dark">
+                  <div class="checkbox">
+                    <label><input type="checkbox" id="allCategories" value="">All</label>
+                  </div>
+                  <div class="checkbox elecBox">
+                    <label><input type="checkbox" id="electrical" value="">Electrical</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" id="mechanical" value="">Mechanical</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label><input type="checkbox" id="finishing" value="">Finishing</label>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-dark mb-3" style="max-width: 100%;">
+                <div class="card-header" align="center">Location</div>
+                <div class="card-body text-dark">
+                  <div class="checkbox">
+                    <label><input type="checkbox" id="allLocations" value="">All</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" id="east" value="">Eastern Province</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" id="middle" value="">Middle</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label><input type="checkbox" id="west" value="">Western Province</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label><input type="checkbox" id="north" value="">Northern Province</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label><input type="checkbox" id="south" value="">Southern Province</label>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-12 col-md-9 col-lg-9">
+          <div class="card border-dark mb-3" style="max-width: 100%; height: 100%;">
+            <div class="card-header" align="center">Vendor List</div>
+            <div class="card-body text-dark">
+              <div class="row card-deck">
+                  <div class="col-sm-12 col-lg-12" name="electricalG" style="margin: auto 0;">
+                      <div class="card-body shadow p-3 mb-1 bg-white rounded" style="border: solid white; border-top-color: #06242a;">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-2 col-lg-2">
+                           <p align="center"><img src="tamimi2.png" class="rounded-circle"></p>
+                          </div>
+                           <div class="col-sm-12 col-md-10 col-lg-10" align="left">
+                              <h5 class="Card-title">Tamimi Group (Electrical 1)</h5>
+                              <p class="card-text">Safety-conscious with extensive experience operating large-scale equipment involving
+                                industrial, municipal, and residential construction-site preparation</p>
+                                <div class="row ml-1">
+                                  <button type="button" class="btn btn-outline-warning text-dark">Details</button>
+                                </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-12" name="mechanicalG" style="margin: auto 0;">
+                      <div class="card-body shadow p-3 mb-1 bg-white rounded" style="border: solid white; border-top-color: #06242a;">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-2 col-lg-2">
+                           <p align="center"><img src="tamimi2.png" class="rounded-circle"></p>
+                          </div>
+                           <div class="col-sm-12 col-md-10 col-lg-10" align="left">
+                              <h5 class="Card-title">Tamimi Group (Mechanical 1)</h5>
+                              <p class="card-text">Safety-conscious with extensive experience operating large-scale equipment involving
+                                industrial, municipal, and residential construction-site preparation</p>
+                                <div class="row ml-1">
+                                  <button type="button" class="btn btn-outline-warning text-dark">Details</button>
+                                </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-12" name="mechanicalG" style="margin: auto 0;">
+                      <div class="card-body shadow p-3 mb-1 bg-white rounded" style="border: solid white; border-top-color: #06242a;">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-2 col-lg-2">
+                           <p align="center"><img src="tamimi2.png" class="rounded-circle"></p>
+                          </div>
+                           <div class="col-sm-12 col-md-10 col-lg-10" align="left">
+                              <h5 class="Card-title">Tamimi Group (Mechanical 2)</h5>
+                              <p class="card-text">Safety-conscious with extensive experience operating large-scale equipment involving
+                                industrial, municipal, and residential construction-site preparation</p>
+                                <div class="row ml-1">
+                                  <button type="button" class="btn btn-outline-warning text-dark">Details</button>
+                                </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-12" name="finishingG" style="margin: auto 0;">
+                      <div class="card-body shadow p-3 mb-1 bg-white rounded" style="border: solid white; border-top-color: #06242a;">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-2 col-lg-2">
+                           <p align="center"><img src="tamimi2.png" class="rounded-circle"></p>
+                          </div>
+                           <div class="col-sm-12 col-md-10 col-lg-10" align="left">
+                              <h5 class="Card-title">Tamimi Group (Finishing 1)</h5>
+                              <p class="card-text">Safety-conscious with extensive experience operating large-scale equipment involving
+                                industrial, municipal, and residential construction-site preparation</p>
+                                <div class="row ml-1">
+                                  <button type="button" class="btn btn-outline-warning text-dark">Details</button>
+                                </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-12" name="electricalG" style="margin: auto 0;">
+                      <div class="card-body shadow p-3 mb-1 bg-white rounded" style="border: solid white; border-top-color: #06242a;">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-2 col-lg-2">
+                           <p align="center"><img src="tamimi2.png" class="rounded-circle"></p>
+                          </div>
+                           <div class="col-sm-12 col-md-10 col-lg-10" align="left">
+                              <h5 class="Card-title">Tamimi Group (Electrical 2)</h5>
+                              <p class="card-text">Safety-conscious with extensive experience operating large-scale equipment involving
+                                industrial, municipal, and residential construction-site preparation</p>
+                                <div class="row ml-1">
+                                  <button type="button" class="btn btn-outline-warning text-dark">Details</button>
+                                </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-12" name="finishingG" style="margin: auto 0;">
+                      <div class="card-body shadow p-3 mb-1 bg-white rounded" style="border: solid white; border-top-color: #06242a;">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-2 col-lg-2">
+                           <p align="center"><img src="tamimi2.png" class="rounded-circle"></p>
+                          </div>
+                           <div class="col-sm-12 col-md-10 col-lg-10" align="left">
+                              <h5 class="Card-title">Tamimi Group (Finishing 2)</h5>
+                              <p class="card-text">Safety-conscious with extensive experience operating large-scale equipment involving
+                                industrial, municipal, and residential construction-site preparation</p>
+                                <div class="row ml-1">
+                                  <button type="button" class="btn btn-outline-warning text-dark">Details</button>
+                                </div>
+                           </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bootstrap Links -->
+    <!-- <script src="zenscroll-latest\zenscroll-min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+    document.querySelector(".logout").addEventListener("click", function(){
+      document.querySelector(".logout").classList.add("dim");
+      setTimeout(function(){document.querySelector(".logout").classList.remove("dim");}, 150);
+    });
+    //////////// Testing the Output /////////////////
+    console.log(document.getElementsByName("finishingG").length);
+    console.log(document.getElementsByName("finishingG")[0].innerText);
+    console.log(document.getElementsByName("finishingG")[1].innerText);
+    //////////////////////////////////////////////////
+
+    function removeMechanical(){
+      document.getElementsByName("mechanicalG")[0].classList.add("hide");
+      document.getElementsByName("mechanicalG")[1].classList.add("hide");
+    }
+    function showMechanical(){
+      document.getElementsByName("mechanicalG")[0].classList.remove("hide");
+      document.getElementsByName("mechanicalG")[1].classList.remove("hide");
+    }
+    function removeFinighing(){
+      document.getElementsByName("finishingG")[0].classList.add("hide");
+      document.getElementsByName("finishingG")[1].classList.add("hide");
+    }
+    function showFinighing(){
+      document.getElementsByName("finishingG")[0].classList.remove("hide");
+      document.getElementsByName("finishingG")[1].classList.remove("hide");
+    }
+    function removeElectrical(){
+      document.getElementsByName("electricalG")[0].classList.add("hide");
+      document.getElementsByName("electricalG")[1].classList.add("hide");
+    }
+    function showElectrical(){
+      document.getElementsByName("electricalG")[0].classList.remove("hide");
+      document.getElementsByName("electricalG")[1].classList.remove("hide");
+    }
+    function showAllCategories(){
+      showFinighing();
+      showElectrical();
+      showMechanical();
+    }
+
+    document.addEventListener("click", function(){
+      if(document.getElementById('allCategories').checked || (document.getElementById('electrical').checked &&
+      document.getElementById('mechanical').checked &&
+      document.getElementById('finishing').checked)){
+
+          document.getElementById('electrical').checked = false;
+          document.getElementById('mechanical').checked = false;
+          document.getElementById('finishing').checked = false;
+          document.getElementById('allCategories').checked = true;
+
+          document.getElementById("electrical").disabled = true;
+          document.getElementById("mechanical").disabled = true;
+          document.getElementById("finishing").disabled = true;
+
+          showAllCategories();
+      }
+      else if(!document.getElementById('allCategories').checked){
+        document.getElementById("electrical").disabled = false;
+        document.getElementById("mechanical").disabled = false;
+        document.getElementById("finishing").disabled = false;
+      }
+      //////////// Electrical Vendors Only ///////
+      if(document.getElementById('electrical').checked &&
+      !document.getElementById('mechanical').checked &&
+      !document.getElementById('finishing').checked)
+      {
+        showElectrical();
+        removeMechanical();
+        removeFinighing();
+      }
+      else if(!document.getElementById('electrical').checked &&
+      !document.getElementById('mechanical').checked &&
+      !document.getElementById('finishing').checked)
+      {
+        showAllCategories();
+      }
+      //////////// Mechanical Vendors Only ///////
+      if(document.getElementById('mechanical').checked &&
+      !document.getElementById('electrical').checked &&
+      !document.getElementById('finishing').checked)
+      {
+        showMechanical();
+        removeElectrical();
+        removeFinighing();
+      }
+      else if(!document.getElementById('electrical').checked &&
+      !document.getElementById('mechanical').checked &&
+      !document.getElementById('finishing').checked)
+      {
+        showAllCategories();
+      }
+      //////////// Finishing Vendors Only ///////
+      if(document.getElementById('finishing').checked &&
+      !document.getElementById('mechanical').checked &&
+      !document.getElementById('electrical').checked)
+      {
+        showFinighing();
+        removeElectrical();
+        removeMechanical();
+      }
+      else if(!document.getElementById('electrical').checked &&
+      !document.getElementById('mechanical').checked &&
+      !document.getElementById('finishing').checked)
+      {
+        showAllCategories();
+      }
+      ////////////////Mechanical & Electrical Vendors Only //////
+      if(document.getElementById('electrical').checked &&
+      document.getElementById('mechanical').checked &&
+      !document.getElementById('finishing').checked)
+      {
+        showElectrical();
+        showMechanical();
+        removeFinighing();
+      }
+      else if(!document.getElementById('electrical').checked &&
+      !document.getElementById('mechanical').checked &&
+      !document.getElementById('finishing').checked)
+      {
+        showAllCategories();
+      }
+      ////////////////Mechanical & Finishing Vendors Only //////
+      if(document.getElementById('finishing').checked &&
+      document.getElementById('mechanical').checked &&
+      !document.getElementById('electrical').checked)
+      {
+        removeElectrical();
+        showMechanical();
+        showFinighing();
+      }
+      else if(!document.getElementById('electrical').checked &&
+      !document.getElementById('mechanical').checked &&
+      !document.getElementById('finishing').checked)
+      {
+        showAllCategories();
+      }
+    });
+      // vendorsArray[0].classList.add("hide");
+      // vendorsArray[1].classList.add("hide");
+      // vendorsArray[2].classList.add("hide");
+
+    // document.addEventListener("click", function(){
+
+    //
+    // });
+      // if(document.getElementById("allCategories").checked)
+      // {
+      //   document.getElementById("electrical").disabled = true;
+      //   document.getElementById("mechanical").disabled = true;
+      //   document.getElementById("finishing").disabled = true;
+      // }
+      // if(!document.getElementById("allCategories").checked)
+      // {
+      //   document.getElementById("electrical").disabled = false;
+      //   document.getElementById("mechanical").disabled = false;
+      //   document.getElementById("finishing").disabled = false;
+      // }
+      // /////////
+      // if(document.getElementById('electrical').checked){
+      //   document.getElementById("allCategories").disabled = true;
+      //   document.getElementsByName("mechanicalG")[0].classList.add("hide");
+      //   document.getElementsByName("finishingG")[0].classList.add("hide");
+      // }
+      // if(!document.getElementById('electrical').checked){
+      //   document.getElementById("allCategories").disabled = false;
+      //   document.getElementsByName("mechanicalG")[0].classList.remove("hide");
+      //   document.getElementsByName("finishingG")[0].classList.remove("hide");
+      // }
+      // ////////
+      // if(document.getElementById('mechanical').checked){
+      //   document.getElementById("allCategories").disabled = true;
+      //   document.getElementsByName("electricalG")[0].classList.add("hide");
+      //   document.getElementsByName("finishingG")[0].classList.add("hide");
+      // }
+      // if(!document.getElementById('mechanical').checked){
+      //   document.getElementById("allCategories").disabled = false;
+      //   document.getElementsByName("electricalG")[0].classList.remove("hide");
+      //   document.getElementsByName("finishingG")[0].classList.remove("hide");
+      // }
+    //
+    // });
+
+    </script>
+  </body>
+</html>
