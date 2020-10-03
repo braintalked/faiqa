@@ -16,9 +16,11 @@ opacity: 0.5;
 }
 .learnmore:hover{
   opacity: 0.9;
+  cursor: pointer;
 }
-.col-sm-12{
-
+.fab:hover{
+  opacity: 0.7;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   footer .brdr{
@@ -26,7 +28,7 @@ opacity: 0.5;
     border-color: orange;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   footer .brdr{
     border-bottom: solid 2px;
     border-color: orange;
