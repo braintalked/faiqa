@@ -2,7 +2,6 @@ html, body {
     overflow-x: hidden;
     box-sizing: border-box;
 /*     width: auto; */
-    background-color: blue;
 }
 .dim{
 opacity: 0.5;
