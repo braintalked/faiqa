@@ -1,9 +1,7 @@
 body {
     overflow-x: hidden;
     box-sizing: border-box;
-
 }
-
 .dim{
 opacity: 0.5;
 }
