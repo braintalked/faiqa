@@ -1,4 +1,4 @@
-html, body {width: auto!important; overflow-x: hidden!important} 
+html, body {overflow-x: hidden} 
 body{
   box-sizing: border-box;
 }
