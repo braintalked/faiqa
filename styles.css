@@ -5,7 +5,10 @@ body{
 .dim{
 opacity: 0.5;
 }
-
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
 .learnmore:hover{
   opacity: 0.9;
   cursor: pointer;
