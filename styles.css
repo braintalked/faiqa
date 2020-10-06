@@ -33,4 +33,8 @@ opacity: 0.5;
     border-bottom: solid 2px;
     border-color: orange;
   }
+  .products{
+    margin-left: auto ;
+    margin-right: auto;
+  }
 }
