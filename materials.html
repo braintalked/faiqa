@@ -3,7 +3,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="utf-8"/>
     <title>Faiqa</title>
-
     <!-- Bootstrap css & javascript links -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
      <!-- CSS Style File -->
@@ -14,17 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/ab5937a0f1.js" crossorigin="anonymous"></script>
-    <style media="screen">
-      .hide{
-        position: absolute;
-        visibility: hidden;
-      }
-
-    </style>
   </head>
 
   <body>
-    <!-- Navigation Bar -->
+<!-- ////////////////////////////////////// START NAVIGATION BAR ////////////////////////////////////////// -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding: 10px; background-color: #06242a;">
       <a class="navbar-brand" href="index.html" style="font-weight: bold; font-size: 1.7rem; margin-right: 30px;"><img src="helmet.png" style="margin-right: 5px;" alt="logo">FAIQA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +52,6 @@
               <a class="dropdown-item" href="#">Materials & Equipment<br>Marketplace</a>
               <a class="dropdown-item" href="vendors.html">Vendors & Service Providers<br>Marketplace</a>
               <a class="dropdown-item" href="#">Contractors Marketplace</a>
-              <a class="dropdown-item" href="../workers/en.html">Workforce Marketplace</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -79,55 +70,105 @@
         </li>
       </div>
     </nav>
-      <!-- /////////////////////////////////////////////////// CONTENT //////////////////////////////////// -->
+<!-- ///////////////////////////////// END NAVIGATION BAR //////////////////////////////////// -->
+
+<!-- //////////////////////////////////// START PAGE CONTENT ////////////////////////////////////// -->
+
+<!-- //////////////////////////////// START CATEGORY FILTERING MENUS /////////////////////////////////// -->
     <div class="container-fluid" style="margin-top: 120px;">
       <div class="row">
         <div class="col-sm-12 col-md-3 col-lg-3">
               <div class="card border-dark mb-3" style="max-width: 100%;">
-                <div class="card-header" align="center">Category</div>
+                <div class="card-header" align="center" style="font-weight: bold;">Category</div>
                 <div class="card-body text-dark">
-                  <div class="checkbox">
-                    <label><input type="checkbox" id="allCategories" value="">All</label>
-                  </div>
-                  <div class="checkbox elecBox">
-                    <label><input type="checkbox" id="electrical" value="">Electrical</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" id="mechanical" value="">Mechanical</label>
-                  </div>
-                  <div class="checkbox disabled">
-                    <label><input type="checkbox" id="finishing" value="">Finishing</label>
-                  </div>
+                    <div class="checkbox ml-2">
+                      <label class="checkbox-bootstrap checkbox-lg">
+                          <input type="checkbox" id="allCategories">
+                          <span class="checkbox-placeholder"></span>
+                          All
+                      </label>
+                    </div>
+                    <div class="checkbox ml-2">
+                      <label class="checkbox-bootstrap checkbox-lg">
+                         <input type="checkbox" id="electrical">
+                         <span class="checkbox-placeholder"></span>
+                         Electrical
+                      </label>
+                    </div>
+                    <div class="checkbox ml-2">
+                      <label class="checkbox-bootstrap checkbox-lg">
+                          <input type="checkbox" id="mechanical">
+                          <span class="checkbox-placeholder"></span>
+                          Mechanical
+                      </label>
+                    </div>
+                    <div class="checkbox ml-2">
+                      <label class="checkbox-bootstrap checkbox-lg">
+                         <input type="checkbox" id="finishing">
+                         <span class="checkbox-placeholder"></span>
+                         Finishing
+                      </label>
+                    </div>
                 </div>
               </div>
+<!-- //////////////////////////////// END CATEGORY FILTERING MENUS /////////////////////////////////// -->
+
+<!-- //////////////////////////////// START LOCATION FILTERING MENUS /////////////////////////////////// -->
               <div class="card border-dark mb-3" style="max-width: 100%;">
-                <div class="card-header" align="center">Location</div>
+                <div class="card-header" align="center" style="font-weight: bold;">Location</div>
                 <div class="card-body text-dark">
-                  <div class="checkbox">
-                    <label><input type="checkbox" id="allLocations" value="">All</label>
+                  <div class="checkbox ml-2">
+                    <label class="checkbox-bootstrap checkbox-lg">
+                       <input type="checkbox" id="allLocations">
+                       <span class="checkbox-placeholder"></span>
+                       All
+                    </label>
                   </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" id="east" value="">Eastern Province</label>
+                  <div class="checkbox ml-2">
+                    <label class="checkbox-bootstrap checkbox-lg">
+                       <input type="checkbox" id="east">
+                       <span class="checkbox-placeholder"></span>
+                       Eastern Province
+                    </label>
                   </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" id="middle" value="">Middle</label>
+                  <div class="checkbox ml-2">
+                    <label class="checkbox-bootstrap checkbox-lg">
+                       <input type="checkbox" id="north">
+                       <span class="checkbox-placeholder"></span>
+                       Northern Province
+                    </label>
                   </div>
-                  <div class="checkbox disabled">
-                    <label><input type="checkbox" id="west" value="">Western Province</label>
+                  <div class="checkbox ml-2">
+                    <label class="checkbox-bootstrap checkbox-lg">
+                       <input type="checkbox" id="west">
+                       <span class="checkbox-placeholder"></span>
+                       Western Province
+                    </label>
                   </div>
-                  <div class="checkbox disabled">
-                    <label><input type="checkbox" id="north" value="">Northern Province</label>
+                  <div class="checkbox ml-2">
+                    <label class="checkbox-bootstrap checkbox-lg">
+                       <input type="checkbox" id="south">
+                       <span class="checkbox-placeholder"></span>
+                       Southern Province
+                    </label>
                   </div>
-                  <div class="checkbox disabled">
-                    <label><input type="checkbox" id="south" value="">Southern Province</label>
+                  <div class="checkbox ml-2">
+                    <label class="checkbox-bootstrap checkbox-lg">
+                       <input type="checkbox" id="middle">
+                       <span class="checkbox-placeholder"></span>
+                       Middle Province
+                    </label>
                   </div>
                 </div>
               </div>
         </div>
-        <div class="col-sm-12 col-md-9 col-lg-9">
-          <div class="p-2 mw-100" style="background-color: #eeeeee">
-            <span style="font-size: 2rem;">Electrical</span>
-            <!-- //////////// Dropdown Menu /////////////// -->
+<!-- //////////////////////////////// END LOCATION FILTERING MENUS /////////////////////////////////// -->
+
+<!-- /////////////////////////////// START ELECTRICAL PRODUCTS MAIN CARD /////////////////////////////-->
+      <div class="col-sm-12 col-md-9 col-lg-9">
+        <div class="p-2 mw-100" style="background-color: #eeeeee">
+          <span style="font-size: 2rem;">Electrical</span>
+<!-- ///////////////////////////////// START MATERIALS FILTERING MENUS /////////////////////////////////// -->
             <div class="btn-group">
               <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Materials
@@ -135,52 +176,65 @@
               <div class="dropdown-menu">
                 <form class="px-4 py-3">
                   <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                    <label class="form-check-label" for="dropdownCheck">
+                    <input type="checkbox" class="form-check-input" id="allElectricalMaterialsCheckbox">
+                    <label class="form-check-label" for="allElectricalMaterialsCheckbox">
+                      All
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="lampsMaterialsCheckbox">
+                    <label class="form-check-label" for="lampsMaterialsCheckbox">
                       Lamps
                     </label>
                   </div>
                   <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                    <label class="form-check-label" for="dropdownCheck">
+                    <input type="checkbox" class="form-check-input" id="switchesMaterialsCheckbox">
+                    <label class="form-check-label" for="switchesMaterialsCheckbox">
                       Switches
                     </label>
                   </div>
                 </form>
               </div>
             </div>
-            <!-- /////////////////////END OF DROPDOWN MENU////////// -->
-            <!-- //////////// Dropdown Menu /////////////// -->
-            <div class="btn-group">
+<!-- ///////////////////////////////// END MATERIALS FILTERING MENUS /////////////////////////////////// -->
+
+<!-- ////////////////////////////// START BRANDS FILTERING MENUS //////////////////////////////// -->
+           <div class="btn-group">
               <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Brand
               </button>
               <div class="dropdown-menu">
                 <form class="px-4 py-3">
                   <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                    <label class="form-check-label" for="dropdownCheck">
-                      General Electric
+                    <input type="checkbox" class="form-check-input" id="allBrandsCheckbox">
+                    <label class="form-check-label" for="allBrandsCheckbox">
+                      All
                     </label>
                   </div>
                   <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                    <label class="form-check-label" for="dropdownCheck">
+                    <input type="checkbox" class="form-check-input" id="geBrandsCheckbox">
+                    <label class="form-check-label" for="geBrandsCheckbox">
+                      GE
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="philipsBrandsCheckbox">
+                    <label class="form-check-label" for="philipsBrandsCheckbox">
                       Philips
                     </label>
                   </div>
                 </form>
               </div>
             </div>
-            <!-- /////////////////////END OF DROPDOWN MENU////////// -->
+<!-- ////////////////////////////// END BRANDS FILTERING MENUS //////////////////////////////// -->
 
-            <!-- /////////////////////////// START CARDS ///////////////////////// -->
+<!-- //////////////////////////////////// START ELECTRICAL PRODUCTS CARDS ////////////////////////////////////// -->
             <div class="row mt-4">
-              <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="card products w-100" style="width: 18rem;">
+              <div class="col-sm-12 col-md-6 col-lg-3 material ge switch">
+                <div class="card w-100" style="width: 18rem;">
                   <img class="card-img-top" src="images\electrical\lamps\lamp1.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">GE Switch</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
@@ -193,11 +247,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="card products w-100" style="width: 18rem;">
-                  <img class="card-img-top" src="images\electrical\lamps\lamp1.jpg" alt="Card image cap">
+              <div class="col-sm-12 col-md-6 col-lg-3 material ge lamp">
+                <div class="card w-100" style="width: 18rem;">
+                  <img class="card-img-top" src="images\electrical\lamps\lamp2.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">GE Lamp</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
@@ -210,11 +264,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="card products w-100" style="width: 18rem;">
+              <div class="col-sm-12 col-md-6 col-lg-3 material philips lamp">
+                <div class="card w-100" style="width: 18rem;">
                   <img class="card-img-top" src="images\electrical\lamps\lamp3.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Philips Lamp</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
@@ -227,11 +281,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="card products w-100" style="width: 18rem;">
+              <div class="col-sm-12 col-md-6 col-lg-3 material philips switch">
+                <div class="card w-100" style="width: 18rem;">
                   <img class="card-img-top" src="images\electrical\lamps\lamp4.jpg" alt="Card image cap">
                   <div class="card-body">
-                    <h5 class="card-title">First Title</h5>
+                    <h5 class="card-title">Philips Switch</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
@@ -245,197 +299,24 @@
                 </div>
               </div>
             </div>
+<!-- //////////////////////////////////// END PRODUCT CARDS ////////////////////////////////////// -->
           </div>
         </div>
+<!-- /////////////////////////////// END ELECTRICAL PRODUCTS MAIN CARD /////////////////////////////-->
+<!-- //////////////////////////////////// END PAGE CONTENT ////////////////////////////////////// -->
+
     <!-- JavaScript Bootstrap Links -->
-    <script src="zenscroll-latest\zenscroll-min.js"></script>
+    <!-- <script src="zenscroll-latest\zenscroll-min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
     document.querySelector(".signin").addEventListener("click", function(){
-      document.querySelector(".signin").classList.add("dim");
+      document.querySelector(".signin").classLst.add("dim");
       setTimeout(function(){document.querySelector(".signin").classList.remove("dim");}, 150);
     });
-    //////////// Testing the Output /////////////////
-    console.log(document.getElementsByName("finishingG").length);
-    console.log(document.getElementsByName("finishingG")[0].innerText);
-    console.log(document.getElementsByName("finishingG")[1].innerText);
-    //////////////////////////////////////////////////
-
-    function removeMechanical(){
-      document.getElementsByName("mechanicalG")[0].classList.add("hide");
-      document.getElementsByName("mechanicalG")[1].classList.add("hide");
-    }
-    function showMechanical(){
-      document.getElementsByName("mechanicalG")[0].classList.remove("hide");
-      document.getElementsByName("mechanicalG")[1].classList.remove("hide");
-    }
-    function removeFinighing(){
-      document.getElementsByName("finishingG")[0].classList.add("hide");
-      document.getElementsByName("finishingG")[1].classList.add("hide");
-    }
-    function showFinighing(){
-      document.getElementsByName("finishingG")[0].classList.remove("hide");
-      document.getElementsByName("finishingG")[1].classList.remove("hide");
-    }
-    function removeElectrical(){
-      document.getElementsByName("electricalG")[0].classList.add("hide");
-      document.getElementsByName("electricalG")[1].classList.add("hide");
-    }
-    function showElectrical(){
-      document.getElementsByName("electricalG")[0].classList.remove("hide");
-      document.getElementsByName("electricalG")[1].classList.remove("hide");
-    }
-    function showAllCategories(){
-      showFinighing();
-      showElectrical();
-      showMechanical();
-    }
-
-    document.addEventListener("click", function(){
-      if(document.getElementById('allCategories').checked || (document.getElementById('electrical').checked &&
-      document.getElementById('mechanical').checked &&
-      document.getElementById('finishing').checked)){
-
-          document.getElementById('electrical').checked = false;
-          document.getElementById('mechanical').checked = false;
-          document.getElementById('finishing').checked = false;
-          document.getElementById('allCategories').checked = true;
-
-          document.getElementById("electrical").disabled = true;
-          document.getElementById("mechanical").disabled = true;
-          document.getElementById("finishing").disabled = true;
-
-          showAllCategories();
-      }
-      else if(!document.getElementById('allCategories').checked){
-        document.getElementById("electrical").disabled = false;
-        document.getElementById("mechanical").disabled = false;
-        document.getElementById("finishing").disabled = false;
-      }
-      //////////// Electrical Vendors Only ///////
-      if(document.getElementById('electrical').checked &&
-      !document.getElementById('mechanical').checked &&
-      !document.getElementById('finishing').checked)
-      {
-        showElectrical();
-        removeMechanical();
-        removeFinighing();
-      }
-      else if(!document.getElementById('electrical').checked &&
-      !document.getElementById('mechanical').checked &&
-      !document.getElementById('finishing').checked)
-      {
-        showAllCategories();
-      }
-      //////////// Mechanical Vendors Only ///////
-      if(document.getElementById('mechanical').checked &&
-      !document.getElementById('electrical').checked &&
-      !document.getElementById('finishing').checked)
-      {
-        showMechanical();
-        removeElectrical();
-        removeFinighing();
-      }
-      else if(!document.getElementById('electrical').checked &&
-      !document.getElementById('mechanical').checked &&
-      !document.getElementById('finishing').checked)
-      {
-        showAllCategories();
-      }
-      //////////// Finishing Vendors Only ///////
-      if(document.getElementById('finishing').checked &&
-      !document.getElementById('mechanical').checked &&
-      !document.getElementById('electrical').checked)
-      {
-        showFinighing();
-        removeElectrical();
-        removeMechanical();
-      }
-      else if(!document.getElementById('electrical').checked &&
-      !document.getElementById('mechanical').checked &&
-      !document.getElementById('finishing').checked)
-      {
-        showAllCategories();
-      }
-      ////////////////Mechanical & Electrical Vendors Only //////
-      if(document.getElementById('electrical').checked &&
-      document.getElementById('mechanical').checked &&
-      !document.getElementById('finishing').checked)
-      {
-        showElectrical();
-        showMechanical();
-        removeFinighing();
-      }
-      else if(!document.getElementById('electrical').checked &&
-      !document.getElementById('mechanical').checked &&
-      !document.getElementById('finishing').checked)
-      {
-        showAllCategories();
-      }
-      ////////////////Mechanical & Finishing Vendors Only //////
-      if(document.getElementById('finishing').checked &&
-      document.getElementById('mechanical').checked &&
-      !document.getElementById('electrical').checked)
-      {
-        removeElectrical();
-        showMechanical();
-        showFinighing();
-      }
-      else if(!document.getElementById('electrical').checked &&
-      !document.getElementById('mechanical').checked &&
-      !document.getElementById('finishing').checked)
-      {
-        showAllCategories();
-      }
-    });
-      // vendorsArray[0].classList.add("hide");
-      // vendorsArray[1].classList.add("hide");
-      // vendorsArray[2].classList.add("hide");
-
-    // document.addEventListener("click", function(){
-
-    //
-    // });
-      // if(document.getElementById("allCategories").checked)
-      // {
-      //   document.getElementById("electrical").disabled = true;
-      //   document.getElementById("mechanical").disabled = true;
-      //   document.getElementById("finishing").disabled = true;
-      // }
-      // if(!document.getElementById("allCategories").checked)
-      // {
-      //   document.getElementById("electrical").disabled = false;
-      //   document.getElementById("mechanical").disabled = false;
-      //   document.getElementById("finishing").disabled = false;
-      // }
-      // /////////
-      // if(document.getElementById('electrical').checked){
-      //   document.getElementById("allCategories").disabled = true;
-      //   document.getElementsByName("mechanicalG")[0].classList.add("hide");
-      //   document.getElementsByName("finishingG")[0].classList.add("hide");
-      // }
-      // if(!document.getElementById('electrical').checked){
-      //   document.getElementById("allCategories").disabled = false;
-      //   document.getElementsByName("mechanicalG")[0].classList.remove("hide");
-      //   document.getElementsByName("finishingG")[0].classList.remove("hide");
-      // }
-      // ////////
-      // if(document.getElementById('mechanical').checked){
-      //   document.getElementById("allCategories").disabled = true;
-      //   document.getElementsByName("electricalG")[0].classList.add("hide");
-      //   document.getElementsByName("finishingG")[0].classList.add("hide");
-      // }
-      // if(!document.getElementById('mechanical').checked){
-      //   document.getElementById("allCategories").disabled = false;
-      //   document.getElementsByName("electricalG")[0].classList.remove("hide");
-      //   document.getElementsByName("finishingG")[0].classList.remove("hide");
-      // }
-    //
-    // });
-
     </script>
+    <script src="electricalFilter.js" type="text/javascript"></script>
   </body>
 </html>
