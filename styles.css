@@ -21,6 +21,9 @@ opacity: 0.5;
   position: absolute;
   visibility: hidden;
 }
+.displayNone{
+  display: none;
+}
 
 /* ////////////////////// START "Categories & Locations Filters-Larger Bootstrap Checkbox CSS Code" //////////////////// */
 :root {
