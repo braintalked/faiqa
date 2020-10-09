@@ -1,16 +1,13 @@
 ////////////////////////////////////////////////////////
 //  Developed by: Ali Khalid Alyami                   //
-//  Date: 08-Oct-2020                                 //
+//  Date: 09-Oct-2020                                 //
 //  Email: braintalked@gmail.com                      //
 //  Twitter:@ali_idev                                 //
 ////////////////////////////////////////////////////////
 
 ////////////////////////// START EVENT LISTENER /////////////////////////////////////
   document.addEventListener("click", function(){
-    var locationSelectionsArray = [];
-    var brandSelectionsArray = [];
-    var materialSelectionsArray = [];
-    var finalSelectionsArray = [];
+    var categorySelectionsArray = [];
 ////////////////////////// END EVENT LISTENER /////////////////////////////////////
 
 //////////////////// START Disabling and Enabling Locations Checkboxes ////////////////
@@ -97,7 +94,7 @@ if (document.querySelector("#allLocations").checked){
       enableAllLocationCheckboxes();
     }
 
-    document.querySelectorAll(".electricalMaterial").forEach(pushLocationFuntion);
+    document.querySelectorAll(".material").forEach(pushLocationFuntion);
     function pushLocationFuntion(item){
       locationSelectionsArray.push(item);
     }
@@ -107,7 +104,7 @@ else{
     if(!document.querySelector("#allLocations").checked){
       locationSelectionsArray.forEach(myFunction);
       function myFunction(item){
-        if(item.classList.contains("electricalMaterial")){
+        if(item.classList.contains("material")){
             locationSelectionsArray.splice(locationSelectionsArray.indexOf(item),1);
         }
       }
@@ -200,7 +197,7 @@ if (document.querySelector("#allElectricalMaterialsCheckbox").checked){
       enableAllMaterialCheckboxes();
     }
 
-    document.querySelectorAll(".electricalMaterial").forEach(pushMaterialFuntion);
+    document.querySelectorAll(".material").forEach(pushMaterialFuntion);
     function pushMaterialFuntion(item){
       materialSelectionsArray.push(item);
     }
@@ -210,7 +207,7 @@ else{
     if(!document.querySelector("#allElectricalMaterialsCheckbox").checked){
       materialSelectionsArray.forEach(myFunction);
       function myFunction(item){
-        if(item.classList.contains("electricalMaterial")){
+        if(item.classList.contains("material")){
             materialSelectionsArray.splice(materialSelectionsArray.indexOf(item),1);
         }
       }
@@ -290,30 +287,30 @@ else{
 //////////////////////////// END MATERIALS IF STATEMENTS/////////////////////////
 
 //////////////////////////// START BRANDS IF STATEMENTS/////////////////////////
-if (document.querySelector("#allElectricalBrandsCheckbox").checked
+if (document.querySelector("#allBrandsCheckbox").checked
 || (!document.querySelector("#geBrandsCheckbox").checked
 && !document.querySelector("#philipsBrandsCheckbox").checked
 && !document.querySelector("#siemensBrandsCheckbox").checked
 && !document.querySelector("#schneiderBrandsCheckbox").checked
 && !document.querySelector("#saudiCablesBrandsCheckbox").checked)){
 
-  if (document.querySelector("#allElectricalBrandsCheckbox").checked){
+  if (document.querySelector("#allBrandsCheckbox").checked){
       disableAllBrandCheckboxes();
     }
-  if (!document.querySelector("#allElectricalBrandsCheckbox").checked){
+  if (!document.querySelector("#allBrandsCheckbox").checked){
       enableAllBrandCheckboxes();
     }
 
-  document.querySelectorAll(".electricalMaterial").forEach(pushBrandFuntion);
+  document.querySelectorAll(".material").forEach(pushBrandFuntion);
   function pushBrandFuntion(item){
     brandSelectionsArray.push(item);
     }
 }
 else{
-    if(!document.querySelector("#allElectricalBrandsCheckbox").checked){
+    if(!document.querySelector("#allBrandsCheckbox").checked){
       brandSelectionsArray.forEach(myFunction);
       function myFunction(item){
-        if(item.classList.contains("electricalMaterial")){
+        if(item.classList.contains("material")){
             brandSelectionsArray.splice(brandSelectionsArray.indexOf(item),1);
         }
       }
@@ -412,7 +409,7 @@ else{
   ///////////////// END UPDATING FinalSelectionsArray ///////////////////////
 
 ///////////////////// START SHOWING FINAL SELECTIONS ////////////////////////////
-  document.querySelectorAll(".electricalMaterial").forEach(hideElement);
+  document.querySelectorAll(".material").forEach(hideElement);
   function hideElement(elem){
       elem.classList.add("hide");
     }

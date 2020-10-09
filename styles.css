@@ -97,7 +97,22 @@ opacity: 0.5;
 }
 /* ////////////////////// END "Categories & Locations Filters-Larger Bootstrap Checkbox CSS Code" //////////////////// */
 
-@media screen and (min-width: 768px) {
+/* //////////////////////// START INCREASE CHECKBOX SIZE ////////////////////////////// */
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #0ccce4;
+}
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+  margin-bottom: 5px;
+ }
+/* //////////////////////// END INCREASE CHECKBOX SIZE ////////////////////////////// */
+
   .vendorsContainer{
     margin: 100px;
   }
