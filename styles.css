@@ -107,6 +107,7 @@ opacity: 0.5;
 input[type=checkbox]
 {
   /* Double-sized Checkboxes */
+   transform: scale(2);
   -ms-transform: scale(2); /* IE */
   -moz-transform: scale(2); /* FF */
   -webkit-transform: scale(2); /* Safari and Chrome */
