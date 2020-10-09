@@ -107,16 +107,18 @@ opacity: 0.5;
 input[type=checkbox]
 {
   /* Double-sized Checkboxes */
-   transform: scale(2);
   -ms-transform: scale(2); /* IE */
   -moz-transform: scale(2); /* FF */
   -webkit-transform: scale(2); /* Safari and Chrome */
+  transform: scale(2);
   -o-transform: scale(2); /* Opera */
   padding: 10px;
   margin-bottom: 5px;
  }
 /* //////////////////////// END INCREASE CHECKBOX SIZE ////////////////////////////// */
-
+.form-check{
+  margin-bottom: 5px;
+}
   .vendorsContainer{
     margin: 100px;
   }
