@@ -119,9 +119,8 @@ input[type=checkbox]
 .form-check{
   margin-bottom: 5px;
 }
-  .vendorsContainer{
-    margin: 100px;
-  }
+.vendorsContainer{
+  margin: 100px;
 }
 @media screen and (min-width: 768px) {
   footer .brdr{
